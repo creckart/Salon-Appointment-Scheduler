@@ -26,7 +26,8 @@ echo -e "\nWhat would you like to schedule today?"
 read SERVICE_ID_SELECTED
 case $SERVICE_ID_SELECTED in
   [1-5]) BOOKING_MENU ;;
-      *) SERVICE_MENU "That is not a valid service number.";;
+  6) EXIT ;;
+  *) SERVICE_MENU "That is not a valid service number.";;
 esac
 }
 
